@@ -1,11 +1,12 @@
 {
-  "name": "passiveincomelifestyle",
+  "name": "passive-income-github",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
     "react": "16.8.6",
+    "react-cookie-consent": "4.1.0",
     "react-dom": "16.8.6",
     "react-router": "5.1.2",
     "react-router-dom": "5.1.2",

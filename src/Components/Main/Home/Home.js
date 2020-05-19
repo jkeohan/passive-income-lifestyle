@@ -2,6 +2,9 @@ import React from 'react';
 import './home.css';
 import Header from '../Header/Header'
 import {Link} from 'react-router-dom';
+// https://www.npmjs.com/package/react-cookie-consent
+import CookieConsent, { Cookies } from "react-cookie-consent";
+
 
 function Home() {
   const style = {
@@ -65,6 +68,8 @@ function Home() {
         </article>
       </section>
     </main>
+    <CookieConsent>This website uses cookies to enhance the user experience.</CookieConsent>
+
     </>
   );
 }
