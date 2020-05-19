@@ -1,0 +1,5 @@
+
+article.blog-article .blog-read-more a {
+  color: var(--ocean-blue);
+  text-decoration: none;
+}

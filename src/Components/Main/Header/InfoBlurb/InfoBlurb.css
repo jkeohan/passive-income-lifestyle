@@ -1,0 +1,110 @@
+.category_title {
+  font-size: .9em;
+  font-weight: 500;
+  color: #f08d77;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+div.container header div.wrapper {
+  bottom: 30%;
+  left:0;
+  padding: 1.4em;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+header div.wrapper div.article h1 {
+  font-size: 3em;
+  font-weight: 300;
+  margin: 0 auto;
+  margin-bottom: 0.4em;
+  /* width: 70%; */
+  line-height: 1.5;
+}
+
+header div.wrapper div.article h1 a {
+  text-decoration: none;
+}
+
+header div.wrapper div.article h2{
+  font-size:72px;
+  margin-bottom: 0.4em;
+}
+
+header div.wrapper div.article h3{
+  font-size:3em;
+}
+
+header div.wrapper div.article h1 span {
+  background: url("https://mars.nasa.gov/assets/arrow_up_white_@2x.png") center
+    no-repeat;
+  position: absolute;
+  right: 0;
+  margin-top: -0.2em;
+  background-size: 12px;
+  height: 44px;
+  width: 44px;
+}
+
+header div.wrapper div.article h1 span.arrow.open {
+  transform: rotate(180deg);
+}
+
+header div.wrapper div.article div.description {
+  font-weight: 300;
+  font-size: 0.9em;
+  line-height: 1.8em;
+  height: 0%;
+  max-height: 0;
+  overflow: hidden;
+  /* transform: scaleY(0); */
+  transition: all 1.5s;
+  /*   padding:1.4em; */
+}
+
+header div.wrapper div.article div.description.open {
+  max-height: 300px;
+  /* transform: scaleY(1); */
+  /* transform-origin:top;  */
+  overflow: hidden;
+}
+
+header div.wrapper div.article h1 span {
+  font-style: italic;
+  font-weight: 600;
+}
+
+header div.wrapper div.article h3 {
+  font-weight: 300;
+  text-align: center;
+}
+
+header div.wrapper div.article footer {
+  margin: 1.6em 0 0;
+  display: none;
+}
+
+header div.wrapper div.article footer a {
+  background-color: rgb(74, 119, 137);
+  border-radius: 3px;
+  display: inline-block;
+  padding: 9px 16px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  div.container header div.wrapper {
+    text-align: center;
+    left:0;
+    right:0;
+    /* width: 480px; */
+  }
+
+  header div.wrapper div.article footer {
+    display: block;
+  }
+} 

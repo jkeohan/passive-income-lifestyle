@@ -1,0 +1,42 @@
+
+div.container .header-nav-area {
+  /*     background-color: var(--red); */
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+
+.header-nav-area .brand_area {
+  background: url("https://mars.nasa.gov/assets/logo_nasa_trio@2x.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 56px;
+  width: 300px;
+  z-index: 101;
+
+}
+
+.header-nav-area .brand_area .brand1 {
+  text-indent: -999px;
+  width: 22%;
+}
+
+.header-nav-area .brand_area .brand2 {
+  text-indent: 999px;
+  width: 70%;
+  text-indent: -999px;
+}
+
+@media only screen and (min-width: 1024px) {
+  div.container .header-nav-area {
+     padding:0;
+  }
+}
+
+

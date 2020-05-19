@@ -1,0 +1,198 @@
+section.dashboard {
+  bottom: 35px;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+}
+
+section.dashboard .slide_container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 0 23px;
+}
+
+section.dashboard .slick-list {
+  display: flex;
+  padding: 10px 20px;
+  /* padding: 10px 0px; */
+  width: 100%;
+  /* border-left: 1px solid rgba(216,216,216,0.2);
+    border-right: 1px solid rgba(216,216,216,0.2); */
+}
+
+section.dashboard .slick-list .slick-track {
+  display:flex;
+  width:100%;
+}
+
+section.dashboard .slick-list .slide{
+  border-left: 1px solid rgba(216, 216, 216, 0.4);
+  border-right: 1px solid rgba(216, 216, 216, 0.4);
+  /* display: none; */
+  display: flex;
+  align-items: center;
+  flex: 1 0 230px;
+  justify-content: center;
+  /* padding: 20px 20%; */
+  padding: 8px 3%;
+  /* min-width: 180px; */
+  /* CUSTOMIZED TO WORK WITH NEXT/PREV BUTTONS */
+  min-width:100%;
+}
+
+section .slick-list .slide .image_and_description_container {
+  /* flex: 2; */
+  margin-right: 10px;
+}
+
+
+section.dashboard .slide .title {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  letter-spacing: -0.03em;
+  font-weight: 500;
+  color: rgba(228, 228, 228, 0.8);
+  text-transform: uppercase;
+}
+
+section.dashboard .slide .value {
+  color: #4e8fa4;
+  font-size: 0.78em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+section.dashboard .slick-list .slide[index="1"]  {
+  /* display: none; */
+}
+
+
+section.dashboard .slick-list .slide[index="2"] {
+  /* display: none; */
+}
+
+section.dashboard .slick-list .slide ~ .slide {
+  border-left: none;
+}
+
+section.dashboard .slick-list .slick-active {
+  display: flex;
+}
+
+section.dashboard .slick-list .slick-active .slide {
+  /* border-left: 1px solid rgba(216,216,216,0.2); */
+  opacity: 1;
+}
+
+section.dashboard .slick-prev,
+section.dashboard .slick-next {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  outline: none;
+  padding: 0;
+  width: 40px;
+  z-index:1;
+}
+
+section.dashboard .slick-prev.hide,
+section.dashboard .slick-next.hide {
+  display:none;
+}
+
+section.dashboard .slick-next {
+  background-image: url(https://mars.nasa.gov/assets/arrow_right_slim_dashboard.png);
+  background-repeat: no-repeat;
+  background-size: 27px 70px;
+  background-position: 7px 12px;
+  right: 0;
+  position: absolute;
+}
+
+section.dashboard .slick-prev {
+  background-image: url(https://mars.nasa.gov/assets/arrow_left_slim_dashboard.png);
+  background-repeat: no-repeat;
+  background-size: 27px 70px;
+  background-position: 7px 12px;
+  left: 0;
+  position: absolute;
+}
+
+
+
+section.dashboard .circle_plus {
+  width: 37px;
+  height: 37px;
+  background: url(https://mars.nasa.gov/assets/dashboard_expand.png) no-repeat;
+  background-size: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+
+  section.dashboard .slick-list .slick-track {
+    display: flex;
+  }
+  /* section.dashboard .slick-list .slide {
+    opacity: 1;
+  } */
+
+  section.dashboard .slick-list .slick-track {
+    padding: 20px 0%;
+  }
+
+  section.dashboard .slick-list .slide{
+    display: flex;
+    min-width:50%;
+    /* padding: 20px 8%; */
+  }
+
+  section.dashboard .slick-list .slide[index="1"] {
+    display: flex;
+
+  }
+
+  section.dashboard .slick-list .slide {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  section.dashboard .slick-list .slick-track {
+    display: flex;
+    padding: 20px;
+  }
+
+  section.dashboard .slick-list .slide[index="2"] {
+    display: flex;
+  }
+
+  section.dashboard .slick-list .slide {
+    opacity: 1;
+    min-width:34%;
+  }
+}
+
+ @media only screen and (min-width: 1044px) {
+   =
+    section.dashboard .slick-list .slick-track {
+      display: flex;
+      padding: 20px;
+      transform: translateX(0px) !important;
+    }
+  
+    section.dashboard .slick-list .slide {
+      border-left:none;
+      border-right: none;
+      flex:1;
+      min-width:auto;
+    }
+
+    section.dashboard .slick-prev,
+    section.dashboard .slick-next {
+      display:none !important;
+    } 
+}

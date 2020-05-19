@@ -1,0 +1,21 @@
+footer.main-footer{
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background: var(--ocean-blue);
+  color:black;
+  /* position: absolute;
+  bottom: 0;
+  width: 100%; */
+}
+
+footer.main-footer .footer-info {
+  text-align:center;
+}
+footer.main-footer nav ul {
+  display: flex;
+  width: 400px;
+  justify-content: space-around;
+  /* margin-top: 20px; */
+  /* justify-content: center; */
+  margin: 20px auto;
+}

@@ -1,0 +1,63 @@
+
+.about-us{
+
+
+
+  margin:auto;
+}
+
+section.about-us header {
+  min-height: 500px;
+  background: url(https://res.cloudinary.com/jkeohan/image/upload/v1589406591/FullSizeR-2_atf3pz.jpg);
+  background-size: cover;
+    background-position: 0;
+    position: relative;
+}
+
+section.about-us header .wrapper {
+  z-index: 100;
+}
+
+section.about-us-main {
+  min-height: 500px;
+  width: 1024px;
+  margin: auto;
+  padding: 20px 0;
+  overflow: hidden;
+  line-height: 2;
+}
+
+.about-us p {
+  color:black;
+  margin:16px 0;
+}
+
+.about-us img {
+    width:200px;
+  height:200px;
+  object-fit:cover;
+
+  border-radius:50%;
+}
+
+img.aruba {
+  float:left;
+  shape-outside: inset(1% round 50%);
+  margin-right: 20px;
+  margin-bottom:20px;
+}
+
+img.greece {
+  float: right;
+  shape-outside: inset(1% round 50%);
+  margin-left: 20px;
+}
+
+.gradient_container_top {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent); 
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}

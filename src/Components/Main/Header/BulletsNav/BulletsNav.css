@@ -1,0 +1,30 @@
+:root {
+  --red: rgb(84, 35, 26);
+}
+
+.bullets-count {
+  bottom: 25%;
+  display: flex;
+  height: 8px;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+}
+
+.bullets-count .bullet {
+  background: white;
+  border-radius: 50%;
+  /* border: 2px solid  var(--red); */
+  height: 10px;
+  margin-right: 10px;
+  opacity: 0.5;
+  width: 10px;
+}
+
+.bullets-count .bullet.bullet-selected {
+  opacity: 1;
+}
+
+.bullets-count .bullet:hover {
+  cursor: pointer;
+}

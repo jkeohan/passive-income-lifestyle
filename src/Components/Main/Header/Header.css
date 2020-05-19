@@ -1,0 +1,57 @@
+div.container header {
+  /* background-image: url("https://res.cloudinary.com/jkeohan/image/upload/v1560709227/mars-landing_eh42f9.jpg"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+  /* transition: all 1s; */
+}
+
+div.container header .gradient_container_top {
+  /* background: linear-gradient(rgba(0, 0, 0, 0.6), transparent); */
+  background: rgba(0, 0, 0, 0.4);
+  /* background: linear-gradient(transparent , rgba(0, 0, 0, 0.6), transparent); */
+  /* height: 400px; */
+  width: 100%;
+  position: absolute;
+  top:0;
+  bottom:0;
+}
+
+div.container header .gradient_container_bottom {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+section.more_bar {
+  align-items: center;
+  background-color: var(--steel-blue);
+  /* background-color: #4d91a6; */
+  bottom: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  /* height: 36px; */
+  /* line-height: 36px; */
+  position: absolute;
+  /* text-align: center; */
+  width: 100%;
+}
+
+section.more_bar .title {
+  color: black !important;
+}
+
+section.more_bar .arrow_down {
+  background: url(https://res.cloudinary.com/jkeohan/image/upload/v1552338932/ui_sprite.png) -50px -125px;
+  background-size: 300px;
+  cursor: pointer;
+  display: inline-block;
+  height: 25px;
+  padding: 0;
+  width: 25px;
+  vertical-align: middle;
+}

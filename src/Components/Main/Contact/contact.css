@@ -1,0 +1,64 @@
+* {
+  border: 1px solid;
+}
+
+.contact-us {
+  background: url(https://res.cloudinary.com/jkeohan/image/upload/v1589407120/drinks_etrrf2.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -210px;
+  padding: 200px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.contact-us form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  flex: 1;
+  z-index: 1001;
+}
+
+.contact-us form input {
+  height: 50px;
+  background-color:rgba(255,255,255,0.1);
+  margin: 10px 0;
+}
+
+.contact-us form button {
+  height: 50px;
+  background-color: rgba(255,255,255,0.1);
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+input, select, textarea{
+color:#c7c7b7;
+background-color: rgba(255,255,255,0.1);
+margin: 10px 0;
+font-size:20px;
+padding: 10px;
+}
+
+textarea:focus, input:focus {
+  color:#c7c7b7;
+}
+
+input::placeholder, textarea::placeholder {
+  color:white;
+  font-size:20px;
+}
+
+
+
+.gradient_container_top {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent); 
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
