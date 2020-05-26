@@ -5,9 +5,10 @@ function InfoBlurb(props) {
   return (
     <div className="wrapper">
       <div className="article">
-        <h1>LIFE IS A</h1>
-        <h2>PASSIVE INCOME</h2>
-        <h3>ADVENTURE</h3>
+        <h1><span className="h1_first">LIFE IS A</span>
+        <span className="h1_second">PASSIVE INCOME</span>
+        <span className="h1_third">ADVENTURE</span>
+        </h1>
       </div>
     </div>
   );

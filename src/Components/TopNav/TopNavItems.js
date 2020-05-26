@@ -12,14 +12,18 @@ function TopNavItems({ showTopNavMenu, setHamburgerActive, activeScroll }) {
     let name = d == 'Home' ? '/' : `/${d.toLowerCase()}`;
     return (
       <li key={i}>
-        <Link
-          to={`${name}`}
+        <NavLink
+          exact to={`${name}`}
           key={i}
           className="nav-element"
-          // activeClassName="active"
+          activeClassName="active"
+          activeStyle={{
+            fontWeight: "bold",
+            color: `#064f88`
+          }}
         >
           {d}
-        </Link>
+        </NavLink>
         <div className="gradient_line" />
       </li>
     );
@@ -30,14 +34,18 @@ function TopNavItems({ showTopNavMenu, setHamburgerActive, activeScroll }) {
 
     return (
       <li key={i}>
-        <Link
-          to={`/${name}`}
+        <NavLink
+          exact to={`${name}`}
           key={i}
           className="nav-element"
-          // activeClassName="active"
+          activeClassName="active"
+          activeStyle={{
+            fontWeight: "bold",
+            color: `#064f88`
+          }}
         >
           {d}
-        </Link>
+        </NavLink>
         <div className="gradient_line" />
       </li>
     );
@@ -79,10 +87,6 @@ function TopNavItems({ showTopNavMenu, setHamburgerActive, activeScroll }) {
           </ul>
         </nav>
       </div>
-      <span
-        onClick={handleMenuIconClick}
-        className={`menu-icon ${menuIconClass}`}
-      />
     </>
   );
 }

@@ -8,10 +8,6 @@ import Blogs from './Blogs/Blogs'
 import {Route,Switch, Redirect} from 'react-router'
 
 function Main() {
-  const style = {
-    // height: '800px'
-    margin: '100px auto'
-  };
 
   return (
     <Switch>

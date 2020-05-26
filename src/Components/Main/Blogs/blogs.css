@@ -51,7 +51,7 @@ section.blog .blog-main article.blog-article p {
 
  article.blog-article img {
   width: 100%;
-  height: 275px;
+  /* height: 275px; */
 }
 
  article.blog-article .blog-title {

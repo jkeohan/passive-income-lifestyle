@@ -2,10 +2,12 @@ import React, {useState, useEffect} from "react";
 import './TopNav.css'
 import TopNavItems from './TopNavItems'
 import TopNavBrand from './TopNavBrand'
+import TopNavMobile from './TopNavMobile/TopNavMobile'
 
 
 function TopNav(props) {
   const [scroll, setScroll] = useState(0)
+  // https://dev.to/n8tb1t/tracking-scroll-position-with-react-hooks-3bbj
   const [activeScroll, setActiveScroll] = useState(false)
 
   useEffect(() => {
@@ -16,7 +18,7 @@ function TopNav(props) {
 
   const handleScroll = e => {
     console.log('window.scrollY', window.scrollY)
-    setActiveScroll(window.scrollY > 180 ? true : false)
+    setActiveScroll(window.scrollY > 100 ? true : false)
     // let element = e.target
     // if (element.scrollHeight - element.scrollTop === element.clientHeight) {
     //   // do something at end of scroll
@@ -25,9 +27,8 @@ function TopNav(props) {
 
   console.log('activeScroll', activeScroll)
   return (
-    <section 
-      className={`header-nav-area ${activeScroll ? 'active_scroll' : ''}`}
-    >
+    <>
+    <section className={`header-nav-area ${activeScroll ? 'active_scroll' : ''}`}>
       {/* <TopNavBrand /> */}
       <TopNavItems {...props} activeScroll={activeScroll ? 'active_scroll' : ''}/> 
       {/* Alternate solution to show/hide those elements */}
@@ -36,6 +37,8 @@ function TopNav(props) {
         <span className="menu-icon" /> 
       } */}
     </section>
+    <TopNavMobile />
+    </>
   );
 }
 

@@ -1,0 +1,33 @@
+.header-nav-area_mobile {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 101;
+    padding: 10px 0;
+}
+
+.header-nav-area_mobile .logo {
+  width:75px;
+}
+
+.header-nav-area_mobile .menu-icon{
+  width: 25px;
+  height: 25px;
+  background: url(https://mars.nasa.gov/assets/ui_sprite@2x.png) 0 0;
+  background-size: 300px;
+  z-index: 100;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+
+.header-nav-area_mobile .menu-icon.menu_icon-close {
+  width: 25px;
+  height: 25px;
+  background: url(https://mars.nasa.gov/assets/ui_sprite@2x.png) -25px 0;
+  background-size: 300px;
+  z-index: 100;
+}

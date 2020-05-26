@@ -1,8 +1,9 @@
 div.container header {
   /* background-image: url("https://res.cloudinary.com/jkeohan/image/upload/v1560709227/mars-landing_eh42f9.jpg"); */
   background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: center; */
   background-size: cover;
+  background-position: -172px;
   min-height: 100%;
   /* transition: all 1s; */
 }
